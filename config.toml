@@ -1,0 +1,5 @@
+baseURL = "https://dev.atelier.design/lea"
+languageCode = "en-us"
+title = "Site de test pour Hugo"
+
+sectionPagesMenu = "main"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+  </head>
+  <body>
+    <nav>
+      {{ .Site.Title }}
+    {{ range .Site.RegularPages }}
+      <a class="" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Name }}</a>
+    {{ end }}
+    </nav>
+    {{ block "content" . }}{{ end }}
+    <ul>
+    </ul>
+  </body>
+</html>
